@@ -8,7 +8,7 @@
 :root {
     /* Cores de fundo */
     --bg-color-start:     #000000;
-    --bg-color-end:       #0f0f0f;
+    --bg-color-end:       #000000;
 
     /* Tipografia */
     --text-primary:       #ffffff;
@@ -20,9 +20,9 @@
     --primary-glow:       rgba(163, 0, 0, 0.6);
     --primary-glow-light: rgba(163, 0, 0, 0.2);
 
-    /* Painéis / glassmorphism */
-    --panel-bg:           rgba(15, 15, 15, 0.6);
-    --panel-bg-alt:       rgba(0, 0, 0, 0.4);
+    /* Painéis */
+    --panel-bg:           transparent;
+    --panel-bg-alt:       transparent;
 
     /* Tipografia */
     --font-heading: 'Outfit', sans-serif;
@@ -31,12 +31,12 @@
 
 /* Tema claro — sobrescreve apenas os tokens necessários */
 body.light-mode {
-    --bg-color-start:  #fdfdfd;
-    --bg-color-end:    #f4f4f4;
+    --bg-color-start:  #ffffff;
+    --bg-color-end:    #ffffff;
     --text-primary:    #1a1a1a;
     --text-secondary:  #4a4a4a;
-    --panel-bg:        rgba(255, 255, 255, 0.85);
-    --panel-bg-alt:    rgba(245, 245, 245, 0.9);
+    --panel-bg:        transparent;
+    --panel-bg-alt:    transparent;
     --primary-glow:    rgba(163, 0, 0, 0.4);
 }
 
@@ -59,8 +59,7 @@ html {
 }
 
 body {
-    background: linear-gradient(135deg, var(--bg-color-start) 0%, var(--bg-color-end) 100%);
-    background-attachment: fixed;
+    background-color: var(--bg-color-start);
     color: var(--text-primary);
     font-family: var(--font-body);
     min-height: 100vh;
@@ -88,20 +87,10 @@ section {
 }
 
 /* --------------------------------------------------------------------------
-   4. ANIMAÇÕES DE ENTRADA/SAÍDA DE SEÇÃO (IntersectionObserver)
+   4. SEÇÕES PRINCIPAIS
    -------------------------------------------------------------------------- */
 main > section {
-    opacity: 0;
-    transition: opacity 0.8s ease-out;
-}
-
-main > section.section--visible {
     opacity: 1;
-}
-
-main > section.section--exit-top {
-    opacity: 0;
-    transition: opacity 0.8s ease-out;
 }
 
 /* --------------------------------------------------------------------------
