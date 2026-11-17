@@ -19,8 +19,8 @@
 - 🌓 **Dark/Light Theme** — Instant theme switching with CSS variables
 - 🌐 **Bilingual (PT/EN)** — Complete internationalization without page reload
 - 📜 **Scroll Progress Bar** — Visual reading progress indicator
-- � **Active Navigation** — Auto-highlight current section in menu
-- � **Smooth Animations** — Progressive fade effects on scroll
+- 🧭 **Active Navigation** — Auto-highlight current section in menu
+- 🎞️ **Smooth Transitions** — Progressive fade effects on scroll
 - 📱 **Fully Responsive** — Mobile-first design with touch-optimized interactions
 - ⚡ **Zero Dependencies** — Pure vanilla JavaScript, no frameworks
 - ♿ **Accessible** — Semantic HTML and ARIA labels
@@ -31,21 +31,24 @@
 
 ```
 Portfolio/
-├── index.html              # Single-page semantic HTML5 structure
-├── README.md               # Project documentation
+├── index.html                  # Single-page semantic HTML5 structure
+├── curriculo.pdf               # Downloadable resume
+├── README.md                   # Project documentation
 └── src/
     ├── css/
-    │   ├── global.css      # Design tokens, CSS reset, and global styles
-    │   ├── header.css      # Navigation bar, theme toggle, language switcher
-    │   ├── hero.css        # Hero section with profile image and tech stack
-    │   ├── sobre.css       # About section
-    │   ├── projetos.css    # Projects grid
-    │   ├── contato.css     # Contact cards
-    │   └── utils.css       # Reusable components (buttons, floating WhatsApp)
+    │   ├── global.css          # Design tokens, CSS reset, and global styles
+    │   ├── header.css          # Navigation bar, theme toggle, language switcher
+    │   ├── hero.css            # Hero section with profile image and tech stack
+    │   ├── sobre.css           # About section
+    │   ├── projetos.css        # Projects grid, carousel, and lightbox
+    │   ├── contato.css         # Contact cards
+    │   └── utils.css           # Reusable components (buttons, floating WhatsApp)
     ├── images/
-    │   └── perfil.png      # Profile photo
+    │   ├── condo-garcia/       # Condo Garcia project screenshots
+    │   ├── perfil.png          # Profile photo
+    │   └── preview.png         # Portfolio preview cover
     └── js/
-        └── main.js         # All interaction logic (theme, i18n, scroll, observers)
+        └── main.js             # Interaction logic (theme, i18n, scroll, carousel, lightbox)
 ```
 
 ---
@@ -83,7 +86,7 @@ All colors, fonts, shadows, and spacing live in CSS variables in `global.css`. T
 
 ```bash
 # Clone the repository
-git clone https://github.com/kaioribeiro777/portfolio.git
+git clone https://github.com/kaioribeiiro/portfolio.git
 cd portfolio
 
 # Open directly in browser
@@ -150,6 +153,7 @@ const translations = {
 |----------|------|
 | **Email** | [kaioribeirodesousa321@gmail.com](mailto:kaioribeirodesousa321@gmail.com) |
 | **LinkedIn** | [linkedin.com/in/kaioribeiro777](https://www.linkedin.com/in/kaioribeiro777/) |
+| **GitHub** | [github.com/kaioribeiiro](https://github.com/kaioribeiiro) |
 | **WhatsApp** | [(87) 98112-4207](https://wa.me/5587981124207) |
 
 ---
